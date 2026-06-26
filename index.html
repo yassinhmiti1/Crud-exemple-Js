@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Crud Exemple js</title>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Cree un compte</h1>
+            <form id="form-step-1">
+                <div class="1-container">
+                    <h2>1- Informations Personnelles</h2>
+                    <div class="1" id="step-1">
+                        <label for="i1">First Name:</label>
+                        <input type="text" id="i1" />
+                        <br />
+                        <label for="i2">Last Name:</label>
+                        <input type="text" id="i2" />
+                        <br />
+                        <label for="bi3">Genre:</label>
+                        <div id="bi3">
+                            <label for="H">Homme</label
+                            ><input type="radio" id="H" value="H" name="g" />
+                            <label for="F">Femme</label
+                            ><input type="radio" id="F" value="F" name="g" />
+                        </div>
+                        <br />
+                        <label for="i4">Paye:</label>
+                        <select id="i4">
+                            <option value="Maroc">Maroc</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="Egypt">Egypt</option>
+                        </select>
+                        <br />
+                        <button type="button" id="btn-suivant-1">
+                            suivant
+                        </button>
+                    </div>
+                </div>
+                <br />
+                <h2>2- Infos De Contact</h2>
+                <div class="2" id="step-2">
+                    <label for="i5">Phone Number:</label
+                    ><input type="text" id="i5" />
+                    <br />
+                    <label for="i6">Email:</label><input type="email" id="i6" />
+                    <br />
+                    <button type="button" id="btn-back-1">go back</button
+                    ><button type="button" id="btn-suivant-2">suivant</button>
+                </div>
+                <br />
+                <h2>3- Confirmation</h2>
+                <div class="3" id="step-3">
+                    <label for="i7">Password:</label
+                    ><input type="text" id="i7" />
+                    <br />
+                    <label for="i8">Rewrite your Password:</label
+                    ><input type="text" id="i8" />
+                    <br />
+                    <button type="button" id="btn-back-2">go back</button
+                    ><button type="submit" id="btn-register">Register</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
