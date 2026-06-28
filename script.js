@@ -24,6 +24,8 @@ bs1.addEventListener("click", function (e) {
   if (val1 === "" || val2 === "" || val3 === "" || val4 === "") {
     alert("il faut saisir tout les champs!");
   } else {
+    var t1 = document.getElementById("ti-1");
+    t1.innerHTML = "1- Informations Personnelles✅"
     st1.classList.add("hidden");
     st2.classList.remove("hidden");
     st3.classList.add("hidden");
@@ -36,6 +38,8 @@ bs2.addEventListener("click", function (e) {
   if (val5 === "" || val6 === "") {
     alert("il faut saisir tout les champs!");
   } else {
+    var t2 = document.getElementById("ti-2");
+    t2.innerHTML = "2- Infos De Contact✅"
     st1.classList.add("hidden");
     st2.classList.add("hidden");
     st3.classList.remove("hidden");
