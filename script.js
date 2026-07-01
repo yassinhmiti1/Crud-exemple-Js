@@ -99,6 +99,34 @@ br.addEventListener("click", function (e) {
     alert("registration complete!!!");
   }
 });
+var prov= 0;
+var allinput= [i1,i2,i4,i5,i6,i7,i8];
+function updatePro(){
+var nbi = 0;
+
+allinput.forEach(input => {
+  if (input.value.trim() !== ""){
+    nbi++;
+  }
+});
+
+let checkedradio= document.querySelector('input[name="g"]:checked');
+if (checkedradio){
+  nbi++;
+}
+const pro= document.getElementById("progress");
+const totali = 8;
+
+var progress = (nbi/totali)*100;
+pro.style.width= `${progress}%`;
+}
+allinput.forEach(input => {
+  input.addEventListener('input', updatePro);
+});
+checkedradio.forEach(radio => {
+  radio.addEventListener('radio', updatePro);
+})
+
 
 st1.classList.remove("hidden");
 st2.classList.add("hidden");
